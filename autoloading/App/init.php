@@ -1,0 +1,21 @@
+<?php 
+
+// require_once 'App/Produk/InfoProduk.php';
+// require_once 'App/Produk/Produk.php';
+// require_once 'App/Produk/Komik.php';
+// require_once 'App/Produk/Game.php';
+// require_once 'App/Produk/CetakInfoProduk.php';
+#
+// function autoload($class) {
+
+// }
+
+//spl_autoload_register(autoload());
+#
+// spl_autoload_register(function($class) {
+// 	require_once __DIR__ . '/Produk/' . $class . '.php';
+// });
+#
+spl_autoload_register(function($class) {
+	require_once 'Produk/' . $class . '.php';
+});
